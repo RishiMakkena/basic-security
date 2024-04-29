@@ -22,7 +22,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Run Unit Tests
-      run: python -m unittest discover -s tests -p '*_test.py'
+      run: python -m unittest discover -s tests -p '*test_*.py'
 
     - name: Run Bandit Security Check
       run: bandit -r src
